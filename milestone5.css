@@ -1,0 +1,131 @@
+/* General Styling */
+body {
+    background-color: #faf3d1; /* Softer light yellow */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Styling */
+form {
+    background-color: #e0f7fa; /* Light cyan */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Input Fields */
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons Styling */
+#generateresume, #download-pdf {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 0;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Button Hover Effects */
+#generateresume:hover, #download-pdf:hover {
+    background-color: #003d80;
+    color: #ffdab9; /* Light salmon */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Resume Output Section */
+#resumeOutput {
+    background-color: #778899; /* Light slate gray */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    color: white;
+}
+
+/* Shareable Link Section */
+#shareable-link-container {
+    background-color: #778899; /* Light slate gray */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    color: white;
+    text-align: center;
+}
+
+#shareable-link {
+    text-decoration: none;
+    color: #ffdab9; /* Light salmon */
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+#shareable-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form, #resumeOutput, #shareable-link-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #generateresume, #download-pdf {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    #generateresume, #download-pdf {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
